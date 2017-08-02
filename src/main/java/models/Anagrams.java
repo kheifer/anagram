@@ -15,13 +15,12 @@ public class Anagrams {
         Arrays.sort(splitSecond);
         System.out.println(splitFirst[0]);
         if (splitFirst.length ==splitSecond.length) {
-            for (int i = 0; i < splitFirst.length; i++) {
-                if (splitFirst[i].equals(splitSecond[i])) {
+                if (Arrays.equals(splitFirst, splitSecond)) {
                     answer = "true";
                 } else {
                     answer = "false";
                 }
-            }
+
         }else{
             answer = "false";
         }
