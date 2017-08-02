@@ -9,7 +9,13 @@ import static org.junit.Assert.*;
  */
 public class AnagramsTest {
     @Test
-    public void anagramCheck_returnsScoreForSingleLetter_1() throws Exception {
+    public void anagramCheck_compareWordLength_1() throws Exception {
+        Anagrams testAnagram = new Anagrams();
+        String expected = "taco";
+        assertEquals(expected, testAnagram.anagramCheck("taco","taco"));
+    }
+    @Test
+    public void anagramCheck_checkifsinglewordsareAnagrams_2() throws Exception {
         Anagrams testAnagram = new Anagrams();
         String expected = "true";
         assertEquals(expected, testAnagram.anagramCheck("taco","coat"));

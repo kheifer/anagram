@@ -14,14 +14,17 @@ public class Anagrams {
         String[] splitSecond = second.split("");
         Arrays.sort(splitSecond);
         System.out.println(splitFirst[0]);
-        for (int i = 0; i < splitFirst.length; i++) {
-            if (splitFirst[i].equals(splitSecond[i])){
-                answer = "true";
-            }else{
-                answer = "false";
+        if (splitFirst.length ==splitSecond.length) {
+            for (int i = 0; i < splitFirst.length; i++) {
+                if (splitFirst[i].equals(splitSecond[i])) {
+                    answer = "true";
+                } else {
+                    answer = "false";
+                }
             }
+        }else{
+            answer = "false";
         }
-
         return answer;
     }
 
