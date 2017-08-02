@@ -11,7 +11,7 @@ public class AnagramsTest {
     @Test
     public void anagramCheck_returnsScoreForSingleLetter_1() throws Exception {
         Anagrams testAnagram = new Anagrams();
-        boolean expected = true;
+        String expected = "true";
         assertEquals(expected, testAnagram.anagramCheck("taco","coat"));
     }
 }
